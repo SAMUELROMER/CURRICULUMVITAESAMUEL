@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+<!-- 
+function getData(){ 
+if (location.search.length > 0){ 
+dataPassed = unescape(location.search.substring(1)) 
+tempArray1=dataPassed.split("&") // split the string at character & and create an array of values 
+for(i=0;i<tempArray1.length-1;i++){ // get value at array index i (name=value) 
+tempArray2=tempArray1[i].split("=") // split the string at character = 
+document.f1.elements["text"+(i+1)].value=tempArray2[1] // assign the value 
+} 
+} 
+} 
+//--> 
+</script> 
+</head> 
+<body onload="getData()"> 
+<form name="f1"> 
+Text 1 <input type="text" name="text1" size="5"> 
+Text 2 <input type="text" name="text2" size="5"> 
+Text 3 <input type="text" name="text3" size="5"> 
+Text 4 <input type="text" name="text4" size="5"> 
+</form> 
+</body> 
+</html> 
